@@ -1,0 +1,17 @@
+<div class="multi-step-form">
+  <div class="multi-step-form__container">
+    {% form form_to_use="{{ module.form_field.form_id }}"
+    response_response_type="{{ module.form_field.response_type }}"
+    response_message="{{ module.form_field.message }}" %}
+  </div>
+
+  {% require_js %}
+  <script>
+    window.ipec = {}
+    window.ipec.formId = '{{ module.form_field.form_id }}';
+    window.ipec.steps = [
+      {%- for item in module.steps -%}{{ item.field_to_show }},{%- endfor -%}
+    ];
+  </script>
+  {% end_require_js %}
+</div>

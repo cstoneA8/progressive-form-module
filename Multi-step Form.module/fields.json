@@ -1,0 +1,48 @@
+[ {
+  "id" : "c96fd4e5-e67e-2053-63b1-d6b7d8afcf73",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "cd48cbaa-65f5-49e3-8541-ceb834e3f93b",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "feb84d4d-fb07-eb82-0500-c265dcfda80d",
+  "name" : "steps",
+  "display_width" : null,
+  "label" : "Steps",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "03603e81-8d2e-d8d1-e690-a552e686619c",
+    "name" : "field_to_show",
+    "display_width" : null,
+    "label" : "Field to show",
+    "help_text" : "",
+    "inline_help_text" : "Fields up to the number selected will be shown in this step",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 1,
+    "step" : 1,
+    "type" : "number"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ ]
+} ]
